@@ -648,12 +648,34 @@ section{
   
   /* Small caption under the Cloud & DevOps skill grid listing the
      specific AWS/Azure services */
-  .skills-note {
-    margin-top: 0.75rem;
-    font-size: 0.85rem;
-    color: #9aa0a6;
-    line-height: 1.5;
-  }
+     .skills-badges {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.6rem;
+      }
+      
+      .badge-group-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #6b93f5;
+        margin-right: 0.25rem;
+      }
+      
+      .skill-pill {
+        display: inline-block;
+        padding: 0.25rem 0.7rem;
+        border-radius: 999px;
+        background: #1e2327;
+        border: 1px solid #333a42;
+        color: #d0d4d9;
+        font-size: 0.78rem;
+        line-height: 1.4;
+      }
+  
   
   /* Terraform's devicon isn't in the compiled icon font, so it's rendered
      as an <img> instead of an <i> class — size it to match the other
