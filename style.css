@@ -404,6 +404,7 @@ section{
     h2 span{
     background:linear-gradient(90deg,#38bdf8,#8b5cf6);
     -webkit-background-clip:text;
+    background-clip:text;
     color:transparent;
     }
     
@@ -630,4 +631,27 @@ section{
     padding:40px;
     color:#94a3b8;
     }
-    
+/* --- Add this block to the end of your existing style.css --- */
+
+/* Icon header for project cards that don't have a screenshot yet
+   (Serverless Contact-Form Pipeline, NexaCore Technologies) */
+   .project-icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 160px;
+    background: linear-gradient(135deg, #1e2327, #2a3038);
+    border-radius: 10px 10px 0 0;
+    font-size: 3rem;
+  }
+  
+  /* Small caption under the Cloud & DevOps skill grid listing the
+     specific AWS/Azure services */
+  .skills-note {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: #9aa0a6;
+    line-height: 1.5;
+  }
+  
