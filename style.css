@@ -631,7 +631,7 @@ section{
     padding:40px;
     color:#94a3b8;
     }
-/* --- Add this block to the end of your existing style.css --- */
+
 
 /* Icon header for project cards that don't have a screenshot yet
    (Serverless Contact-Form Pipeline, NexaCore Technologies) */
@@ -655,3 +655,12 @@ section{
     line-height: 1.5;
   }
   
+  /* Terraform's devicon isn't in the compiled icon font, so it's rendered
+     as an <img> instead of an <i> class — size it to match the other
+     font-icon glyphs next to it */
+  .devicon-img-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: contain;
+    vertical-align: middle;
+  }
